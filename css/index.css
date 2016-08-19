@@ -1,0 +1,78 @@
+.foto-home {
+    height: 200px;
+}
+.saudacao p {
+    color: #99A;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 2em;
+}
+.saudacao-inicio {
+    color: #889;
+    font-size: 3em;
+}
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+.saudacao strong {
+    color: #000;
+    font-size: 2em;
+}
+.saudacao em {
+    color: #851944;
+    font-size: 4em;
+}
+.botao-index {
+    background-color: #851944;
+    border: .2em solid black;
+    color: #FFF;
+    display: block;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 2em auto;
+    width: 40ch;
+}
+.secao-inicio h2 {
+    text-transform: uppercase;
+}
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+.trabalhos h2 {
+    color: #FFF;
+}
+.trabalhos ul {
+    overflow: hidden;
+    border: 10px solid black;
+}
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+.blog {
+    background-color: #999;
+    color: #FFF;
+    border-bottom: 10px solid #851944;
+}
+.blog li a {
+    color: #FCF;
+}
+footer {
+    background-color: #000;
+    color: #FFF;
+}
+footer a {
+    color: #F99;
+}
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
