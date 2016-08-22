@@ -1,6 +1,12 @@
 
+html {
+    height: 100%
+}
 body {
     overflow-x: hidden;
+    height: 100%;
+    perspective: 6px;
+    perspective-origin: 50% 160px;
 }
 header {
     position: relative;
@@ -12,6 +18,10 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.palavras-home li {
+    font-size: 250%;
 }
 .banner-twitter {
     box-sizing: border-box;
@@ -42,67 +52,67 @@ header {
 .eficiencia {
     top: 38%;
     left: 81%;
-    transform: translate(-50%, -50%) rotate(-5deg) translateZ(0px);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(0px) scale(0.25);
 }
 
 .boas-praticas {
     top: 85%;
     left: 17%;
-    transform: translate(-50%, -50%) rotate(10deg) translateX(0px);
+    transform: translate(-50%, -50%) rotate(10deg) translateX(0px) scale(0.25);
 }
 
 .codigo-limpo {
     top: 56%;
     left: 10%;
-    transform: translate(-50%, -50%) rotate(-10deg) translateZ(0px);
+    transform: translate(-50%, -50%) rotate(-10deg) translateZ(0px) scale(0.25);
 }
 
 .css3 {
     top: 63%;
     left: 33%;
-    transform: translate(-50%, -50%) rotate(5deg) translateZ(2px);
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(2px) scale(0.25);
 }
 
 .html5 {
     top: 58%;
     left: 72%;
-    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.25);
 }
 
 .javascript {
     top: 23%;
     left: 66%;
-    transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
 }
 
 .acessibilidade {
     top: 37%;
     left: 26%;
-    transform: translate(-50%, -50%) rotate(-5deg) translateZ(.5px);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(.5px) scale(0.25);
 }
 
 .responsivo {
     top: 19%;
     left: 14%;
-    transform: translate(-50%, -50%) rotate(10deg) translateZ(.5px);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(.5px) scale(0.25);
 }
 
 .otimizacoes {
     top: 81%;
     left: 75%;
-    transform: translate(-50%, -50%) rotate(-5deg) translateZ(.5px);
+    transform: translate(-50%, -50%) rotate(-5deg) translateZ(.5px) scale(0.25);
 }
 
 .agilidade {
     top: 18%;
     left: 35%;
-    transform: translate(-50%, -50%) rotate(5deg) translateZ(1px);
+    transform: translate(-50%, -50%) rotate(5deg) translateZ(1px) scale(0.25);
 }
 
 .design {
     top: 48%;
     left: 65%;
-    transform: translate(-50%, -50%) rotate(10deg) translateZ(.5px);
+    transform: translate(-50%, -50%) rotate(10deg) translateZ(.5px) scale(0.25);
 }
 main {
     width: 100%;
