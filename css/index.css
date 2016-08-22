@@ -122,6 +122,7 @@ main {
 .foto-home {
     height: 200px;
     border-radius: 50%;
+    box-shadow: 0 0 .5em #000;
 }
 .saudacao p {
     color: #99A;
@@ -156,6 +157,7 @@ main {
     text-align: center;
     margin: 2em auto;
     width: 40ch;
+    box-shadow: 0 0 .5em #000, inset 0 0 .5m #000;
 }
 .secao-inicio {
     padding: 2em;
@@ -164,7 +166,8 @@ main {
     font-size: 3em;
     margin-bottom: .5em;
     text-transform: uppercase;
-    text-shadow: 2px 2px #000;
+    text-shadow: 5px 5px #000;
+
 }
 .trabalhos {
     background-color: #3C1D3D;
