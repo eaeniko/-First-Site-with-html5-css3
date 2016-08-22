@@ -1,5 +1,88 @@
+
+header {
+    position: relative;
+}
+/* palavras chaves */
+.palavra-home {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    color: #D5447E;
+    position: absolute;
+}
+
+.eficiencia {
+    top: 24%;
+    left: 77%;
+    transform: rotate(-5deg);
+}
+
+.boas-praticas {
+    top: 80%;
+    left: 8%;
+    transform: rotate(-5deg);
+}
+
+.codigo-limpo {
+    top: 48%;
+    left: 2%;
+    transform:  rotate(10deg);
+}
+
+.css3 {
+    top: 63%;
+    left: 21%;
+    transform: rotate(5deg);
+}
+
+.html5 {
+    top: 55%;
+    left: 75%;
+    transform: rotate(10deg);
+}
+
+.javascript {
+    top: 5%;
+    left: 61%;
+    transform: rotate(-5deg);
+}
+
+.acessibilidade {
+    top: 34%;
+    left: 22%;
+    transform: rotate(-5deg);
+}
+
+.responsivo {
+    top: 19%;
+    left: 7%;
+    transform: rotate(10deg);
+}
+
+.otimizacoes {
+    top: 75%;
+    left: 70%;
+    transform: rotate(-5deg);
+}
+
+.agilidade {
+    top: 5%;
+    left: 24%;
+    transform: rotate(5deg);
+}
+
+.design {
+    top: 37%;
+    left: 62%;
+    transform: rotate(10deg);
+}
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
 .foto-home {
     height: 200px;
+    border-radius: 50%;
 }
 .saudacao p {
     color: #99A;
@@ -21,7 +104,9 @@
 }
 .saudacao em {
     color: #851944;
+    display: inline-block;
     font-size: 4em;
+    transform: rotate(-5deg) skew(-10deg);
 }
 .botao-index {
     background-color: #851944;
@@ -33,20 +118,27 @@
     margin: 2em auto;
     width: 40ch;
 }
+.secao-inicio {
+    padding: 2em;
+}
 .secao-inicio h2 {
+    font-size: 3em;
+    margin-bottom: .5em;
     text-transform: uppercase;
+    text-shadow: 2px 2px #000;
 }
 .trabalhos {
     background-color: #3C1D3D;
-    border-top: 10px solid #000;
-    border-bottom: 10px solid #000;
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
+
 }
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
     overflow: hidden;
-    border: 10px solid black;
+    border: .5em solid black;
 }
 .trabalhos li {
     float: left;
@@ -58,21 +150,47 @@
 }
 .blog {
     background-color: #999;
+    border-bottom: .5em solid #851944;
     color: #FFF;
-    border-bottom: 10px solid #851944;
+    position:  relative;
 }
-.blog li a {
-    color: #FCF;
+.blog small {
+    position: relative;
+    top: -2em;
+}
+.blog li {
+    width: 30%;
+}
+.blog li a
+ {
+    color: #FCC;
+    display: block;
+    padding: .5em;
+}
+.blog .inicio-post {
+    background-color: #F2FFFC;
+    color: #000;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    top: 4em;
+    padding: 1.5em;
+    position: absolute;
+}
+.mais-recente {
+    background-color: #F2FFFC;
+}
+.blog.mais-recente a {
+    color: #F26;
 }
 footer {
     background-color: #000;
     color: #FFF;
+    padding: 2em;
+}
+footer h2 {
+    font-size: 3em;
 }
 footer a {
     color: #F99;
-}
-main {
-    width: 100%;
-    padding-bottom: 0;
-    float: none;
 }
