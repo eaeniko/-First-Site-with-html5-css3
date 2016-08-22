@@ -119,6 +119,9 @@ main {
     padding-bottom: 0;
     float: none;
 }
+.titulo-principal {
+    background-image:  linear-gradient(to bottom: #F)
+}
 .foto-home {
     height: 200px;
     border-radius: 50%;
@@ -157,7 +160,7 @@ main {
     text-align: center;
     margin: 2em auto;
     width: 40ch;
-    box-shadow: 0 0 .5em #000, inset 0 0 .5m #000;
+    box-shadow: 0 0 .5em #000, inset 0 0 .3em #FFF;
 }
 .secao-inicio {
     padding: 2em;
