@@ -215,12 +215,21 @@ main {
 .blog .inicio-post {
     background-color: #F2FFFC;
     color: #000;
-    height: 8em;
+    height: 10em;
     left: 30%;
-    right: 4em;
+    right: 13em;
     top: 4em;
     padding: 1.5em;
-    position: absolute;
+    position: absolute;  
+}
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+.blog a:hover,
+.blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
 }
 .mais-recente {
     background-color: #F2FFFC;
