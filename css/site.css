@@ -44,9 +44,9 @@ main p {
 }
 
 .navegacao-site {
-    text-align: center;
     background-color: #3C1D3D;
     color: #F2FFFC;
+    text-align: center;
     padding: 20px;
 }
 .navegacao-site a:hover, .navegacao-site a:focus {
@@ -65,21 +65,21 @@ main p {
 
 .rodape-pagina {
     background-color: rgba(0, 0, 0, 0.5);
-    color: #F2FFFC;
-    padding: 20px;
-    clear: both;
-    position: fixed;
     bottom: 0;
+    box-sizing: border-box;
+    color: #F2FFFC;
+    clear: both;
+    padding: 20px;
+    position: fixed;
     left: 0;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .container {
-    width: 720px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 0;
+    width: 720px;
 }
 
 strong {
@@ -95,10 +95,11 @@ em {
 }
 
 .icones-redes-sociais a {
-    width: 40px;
-    height: 40px;
     display: block;
+    height: 40px;
     text-indent: -99999px;
+    width: 40px;
+    position: relative;
 }
 
 .github {
@@ -114,9 +115,9 @@ em {
 }
 
 main {
-    width: 80%;
     float: left;
     padding-bottom: 80px;
+    width: 80%;
 }
 
 .minha-foto,
@@ -127,15 +128,26 @@ main {
 }
 
 .navegacao-site {
-    width: 20%;
     float: right;
-    position: relative;
     top: 300px;
+    position: relative;
+    width: 20%;
 }
 
 .minha-foto {
-    position: absolute;
-    top: 0;
-    right: 0;
     height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: #011;
+    font-size: .75em;
 }

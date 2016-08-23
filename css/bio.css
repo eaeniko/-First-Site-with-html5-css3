@@ -1,10 +1,10 @@
 .citacao-bio {
     background-color: #D9E5E3;
     border: .5em solid #C2CCCA;
+    box-sizing: border-box;
     padding: 1em;
     margin: 1em 2em;
     width: 30ch;
-    box-sizing: border-box;
 }
 .citacao-bio:hover,
 .citacao-bio:focus {
@@ -23,4 +23,23 @@
 }
 .citacao-bio:nth-of-type(odd):hover {
     transform: scale(1.2) rotate(5deg);
+}
+.citacao-bio::before {
+    content: '"' ;
+    color: #bbb;
+    font-size: 10em;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: -16px;
+}
+.citacao-bio > p {
+    position: relative;
+}
+.container > p::first-letter {
+    color: #3C1D3D;
+    font-size: 200%;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
 }
