@@ -4,7 +4,11 @@ body {
     font-size: 120%;
     line-height: 1.5;
 }
-
+main {
+    float: left;
+    padding-bottom: 80px;
+    width: calc(100% - 0.9 * 300px);
+}
 h1,
 h2,
 .subtitulo-principal {
@@ -48,6 +52,10 @@ main p {
     color: #F2FFFC;
     text-align: center;
     padding: 20px;
+    float: right;
+    top: 300px;
+    position: relative;
+    width: calc(0.9 * 300px);
 }
 .navegacao-site a:hover, .navegacao-site a:focus {
     text-shadow:  0 0 2px pink;
@@ -114,11 +122,7 @@ em {
     background-image: url(../imagens/linkedin.png);
 }
 
-main {
-    float: left;
-    padding-bottom: 80px;
-    width: 80%;
-}
+
 
 .minha-foto,
 .navegacao-site {
@@ -127,12 +131,7 @@ main {
     box-sizing: border-box;
 }
 
-.navegacao-site {
-    float: right;
-    top: 300px;
-    position: relative;
-    width: 20%;
-}
+
 
 .minha-foto {
     height: 300px;
