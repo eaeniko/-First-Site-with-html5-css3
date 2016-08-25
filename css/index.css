@@ -11,6 +11,7 @@ body {
 header {
     position: relative;
 }
+
 .palavras-home {
     perspective: 6px;
     position: absolute;

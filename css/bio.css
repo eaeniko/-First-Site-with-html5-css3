@@ -1,14 +1,58 @@
+h1 {
+    -webkit-animation: aparece 1s ease-in-out;
+    animation: aparece 1s ease-in-out;
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .citacao-bio {
     background-color: #D9E5E3;
     border: .5em solid #C2CCCA;
     box-sizing: border-box;
     padding: 1em;
+    transition: transform 1s linear, box-shadow 0.5s ease-out;
+    transition-delay: 0s, 0.5s;
+    position: relative;
     margin: 1em 2em;
     width: 30ch;
+    animation: quica 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function:  ease-in;
+}
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    to {
+        top: 1em;
+    }
 }
 .citacao-bio:hover,
 .citacao-bio:focus {
     box-shadow:  0 0 0 999999px rgba(0, 0, 0, .8);
+    animation-play-state: paused;
+
 }
 .citacao-bio:nth-of-type(even) {
     float: left;
