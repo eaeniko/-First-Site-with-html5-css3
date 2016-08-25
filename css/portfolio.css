@@ -10,6 +10,16 @@
 }
 
 .portfolio img {
-    width: 100%;
     box-shadow: 0 0 4px #000;
+    width: 100%
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio li:first-child {
+    flex-basis: 100%;
+}
+.portfolio li {
+    flex: 1 1 45%;
 }
