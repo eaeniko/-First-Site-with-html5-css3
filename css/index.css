@@ -11,7 +11,20 @@ body {
 header {
     position: relative;
 }
-
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@keyframes aparece {
+    0% {
+        opacity: 0;
+        transform: scale(0, 001)
+    }
+}
 .palavras-home {
     perspective: 6px;
     position: absolute;
@@ -19,12 +32,17 @@ header {
     left: 0;
     bottom: 0;
     right: 0;
+    animation:  aparece 2s;
 }
+
 
 .palavras-home li {
     font-size: 250%;
 }
 .banner-twitter {
+    animation: aparece 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
     box-sizing: border-box;
     background-color: #3C1D3D;
     border: .25em solid black;
@@ -147,10 +165,17 @@ main {
     font-size: 2em;
 }
 .saudacao em {
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
     color: #851944;
     display: inline-block;
     font-size: 4em;
     transform: rotate(-5deg) skew(-10deg);
+    position: relative;
+}
+.saudacao p:hover em {
+    animation-play-state: paused;
 }
 .botao-index {
     background-color: #851944;
@@ -162,6 +187,14 @@ main {
     margin: 2em auto;
     width: 40ch;
     box-shadow: 0 0 .5em #000, inset 0 0 .3em #FFF;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
 .secao-inicio {
     padding: 2em;
